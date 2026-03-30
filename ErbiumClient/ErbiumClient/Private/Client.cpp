@@ -86,7 +86,7 @@ void ClientThread()
 
 void Client::Init()
 {
-    UEngine::GetEngine()->GameViewport->ViewportConsole = UGameplayStatics::SpawnObject(UEngine::GetEngine()->ConsoleClass, UEngine::GetEngine()->GameViewport);
+    UEngine::GetEngine()->GameViewport->ViewportConsole = UGameplayStatics::SpawnObject(UEngine::GetEngine()->ConsoleClass, UEngine::GetEngine()->GameViewport); // delete if not wanted in-game conasle
 
     if (VersionInfo.FortniteVersion >= 10 || FConfiguration::bForceRespawns)
     {
